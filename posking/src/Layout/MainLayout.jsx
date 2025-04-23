@@ -23,7 +23,7 @@ const MainLayout = () => {
         ..........Bottom Main div.................. */}
         <div className="flex flex-1 mt-5 ">
             {/* bottom left sidebar div */}
-            <div className={` fixed top-16 left-0 h-full w-[80%] md:w-[20%] mt-5 px-3 transition-all duration-500 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}` }>
+            <div className={`fixed top-16 left-0 h-full w-[80%] md:w-[20%] mt-5 px-3 transition-all duration-500 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}` }>
                 <Sidebar />
               </div>
             {/* bottom right div */}
