@@ -223,9 +223,12 @@ const ProjectRoutes = () => {
                 
             ]
         }
-    ])
+    ],
+    {
+        basename: '/PoskingReactApp'
+      });
   return (
-    <RouterProvider router={routes}/>
+    <RouterProvider router={routes} />
     );
 }
 
