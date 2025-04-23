@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.text-primary {
+    @apply text-[#F23E14];
+  }
+  .bg-primary {
+    @apply bg-[#F23E14];
+  }
+  .border-primary {
+    @apply border-[#F23E14];
+  }
+
+  .focus-ring {
+    @apply focus:ring-1;
+  }
+  
+  .focus-ring:focus {
+    --tw-ring-color: #F23E14;
+  }
+/* ................... */
+.text-secondry {
+    @apply text-[#6E7191];
+  }
+  .bg-secondary {
+    @apply bg-[#FFEDF4];
+  }
+
+  .border-secodary {
+    @apply border-[#6E7191];
+  }
+  
+  .border-table {
+    @apply border-[#e5e7eb];
+  }
+  .input-default {
+    @apply border border-gray-300 rounded-md p-2;
+  }
+
+  .button-default {
+    @apply w-20 border-[#F23E14] text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3
+  }
+
+  .btn-nav-active {
+    @apply bg-[#FFEDF4] text-[#F23E14];
+  }
+  .btn-active {
+    @apply text-[#F23E14] bg-[#FFEDF4] text-center py-2 px-4 rounded font-medium;
+  }
+ /* for buttons */
+ 
+ .btnClassfilter {
+  @apply w-20 border-1 text-[#F23E14] py-2 px-4 rounded-md  mr-3
+}
