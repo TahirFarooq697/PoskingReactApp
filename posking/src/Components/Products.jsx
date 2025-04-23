@@ -10,7 +10,7 @@ export default function Products() {
        <h2 className="text-xl font-semibold p-3 font-sans text-gray-900 mb-3">Top Products</h2>
         </div>
        
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map(product => (
         <Card key={product.id} product={product} />
       ))}

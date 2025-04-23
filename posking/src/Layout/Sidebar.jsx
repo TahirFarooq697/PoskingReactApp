@@ -9,6 +9,7 @@ const Sidebar = () => {
   return (
     //min div
     <div className={basicCss}>
+      
       <BtnwithIcon title="Dashboard" icon={<LuLayoutDashboard />} path="/MainLayout"/>
 
       <div>
@@ -19,3 +20,4 @@ const Sidebar = () => {
 }
 
 export default Sidebar;
+
