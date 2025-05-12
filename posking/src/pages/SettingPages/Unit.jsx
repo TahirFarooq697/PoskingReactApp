@@ -1,10 +1,9 @@
 
 import React from 'react';
-import TableComponent from '../../Components/TableComponent';
-import Button from '../../Components/Button'
+import { Button,TableComponent } from '../../CommonComponents';
 import { UnitDetailTable,UnitTableCoumns } from '../../constants/SettingSideBarDatas/UnitDetailTable';
 
-const Supplier = ({path}) => {
+export const Unit = ({path}) => {
   
   return (
     <div className='w-full'>
@@ -21,7 +20,7 @@ const Supplier = ({path}) => {
 <Button label='Add Supplier' path="/MainLayout"/>
 </div>
 </div>
-
+ 
    
      {/* ..........table sec...... */}
      <div className="flex justify-center">
@@ -32,6 +31,6 @@ const Supplier = ({path}) => {
   );
 }
 
-export default Supplier;
+
 
 

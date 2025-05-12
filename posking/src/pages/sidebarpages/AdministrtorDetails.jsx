@@ -1,13 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
-import TableComponent from '../../Components/TableComponent';
+import { TableComponent,Button,NormalButton,DropdownButton, } from '../../CommonComponents';
+import {FilterInput} from '../../Components';
 import { AdministrtorDetailsTable, AdministrtorTableColumns} from '../../constants/AdministrtorDetailsTable';
-import Button from '../../Components/Button';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import { useState } from 'react';
-const AdministrtorDetails = ({path}) => {
+export const AdministrtorDetails = ({path}) => {
     const inputClass = "border border-gray-300 rounded-md p-2";
       const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
      const [showFilterpurchse, isShowFilterpurchae]=useState(false);
@@ -109,4 +105,3 @@ const AdministrtorDetails = ({path}) => {
   );
 }
 
-export default AdministrtorDetails;

@@ -1,14 +1,10 @@
 
-import React ,{useState}from 'react';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
+import React from 'react';
+import { Button,NormalButton,DropdownButton,TableComponent } from '../../CommonComponents';
+
 import { ProductCategoriesTableColums,ProductCategoriesTable } from '../../constants/SettingSideBarDatas/ProductCategoriesTable';
-import Button from '../../Components/Button'
 
-
-const ProductCategories = ({path}) => {
-  
+export const ProductCategories = ({path}) => {
   return (
     <div className='w-full'>
     
@@ -44,6 +40,6 @@ const ProductCategories = ({path}) => {
   );
 }
 
-export default ProductCategories;
+
 
 

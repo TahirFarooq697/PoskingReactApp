@@ -1,8 +1,5 @@
-
-
 import React from 'react';
-
-const FilterInput = ({ label, type, name, value, onChange, className }) => {
+export const FilterInput = ({ label, type, name, value, onChange, className }) => {
   return (
     <div className="flex flex-col">
       <label className="text-sm font-normal text-secondry mb-1">{label}</label>
@@ -17,5 +14,5 @@ const FilterInput = ({ label, type, name, value, onChange, className }) => {
   );
 };
 
-export default FilterInput;
+
 

@@ -1,15 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
-import InfoOverview from '../../Components/InfoOverview';
-import Button from '../../Components/Button'
-import { useState } from 'react';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
+import { NormalButton,DropdownButton,TableComponent,Button, InfoOverview} from '../../CommonComponents';
+import {FilterInput} from "../../Components"
 import { SalesReportDetailTable,SalesReportTableColums } from '../../constants/SalesReportDetailTable';
-const SalesReport = ({path}) => {
+export const SalesReport = ({path}) => {
     const inputClass = "border border-gray-300 rounded-md p-2";
           const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
                 const [filters, setFilters] = useState({ orderId: '', paymentStatus: '' });
@@ -22,26 +17,21 @@ const SalesReport = ({path}) => {
           if (value === 'print') {
             window.print();
           } else if (value === 'xsl') {
-            // Ensure SalesReportDetailTable is not empty
             if (SalesReportDetailTable.length === 0) {
               alert('No data to export!');
               return;
             }
             const worksheet = XLSX.utils.json_to_sheet(SalesReportDetailTable);
-        
-            // Create a new workbook
+  
             const workbook = XLSX.utils.book_new();
         
-            // Append the worksheet to the workbook
             XLSX.utils.book_append_sheet(workbook, worksheet, 'salesReport');
-        
-            // Write the workbook to a binary Excel format
             const excelBuffer = XLSX.write(workbook, {
               bookType: 'xlsx',
               type: 'array', // Output as a byte array
             });
         
-            // Generate a Blob and trigger the download with FileSaver
+    
             const data = new Blob([excelBuffer], { type: 'application/octet-stream' });
             saveAs(data, 'salesReport.xlsx');
           }
@@ -121,4 +111,3 @@ const SalesReport = ({path}) => {
   );
 }
 
-export default SalesReport;

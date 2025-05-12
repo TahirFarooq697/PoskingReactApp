@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-
-import mainImg from '../assets/Images/auth.jpg'
+import mainImg from "../../assets/Images/auth.jpg"
 import { useNavigate } from 'react-router-dom';
-const SignIn = () => {
+export const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
@@ -15,19 +14,19 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen mt-20">
-      <div className="flex w-full max-w-4xl bg-white rounded-lg shadow-lg">
+    <div className="flex items-center justify-center min-h-screen md:mt-20">
+      <div className="flex flex-col md:flex-row w-full max-w-4xl bg-white rounded-lg shadow-lg">
         {/* image side */}
-        <div className="w-1/2 h-full bg-gray-200 flex justify-center items-center">
+        <div className=" md:w-1/2 md:h-full bg-gray-200 flex justify-center items-center">
           <img
             src={mainImg}
             alt="Main image"
-            className="object-cover w-full h-full"
+            className="object-cover md:w-full h-full "
           />
         </div>
 
        {/* form side */}
-        <div className="w-1/2 p-6">
+        <div className="w-full md:w-1/2 p-4 md:p-6">
           <h2 className="text-2xl font-bold text-center mb-3 text-primary font-sans">Sign In</h2>
           <p className='text-medium font-semibold text-center mb-6 text-[#000000] font-sans'> Sign in to continue shopping</p>
           <form onSubmit={handleSubmit}>
@@ -92,4 +91,3 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;

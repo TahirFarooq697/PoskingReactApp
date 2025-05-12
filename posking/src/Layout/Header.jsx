@@ -3,9 +3,8 @@ import logo from "../assets/Images/logo.png"
 import profileImg from "../../src/assets/Images/profile.jpg"
 import englishFlag from "../assets/Images/englishFlag.png"
 import { FaAlignLeft } from "react-icons/fa";
-import ProfileMenu from './dropdownComponents/ProfileMenu';
-import LanguageSelector from './dropdownComponents/LanguageSelector';
-const Header = ({toggleSidebar}) => {
+import { ProfileMenu, LanguageSelector } from '../Components';
+export const Header = ({toggleSidebar}) => {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [isLanguageChange, setIsLanguageChange] = useState(false);
     const profileRef=useRef(null);
@@ -49,14 +48,16 @@ const Header = ({toggleSidebar}) => {
       },[]);
 
   return (
-    <header className="px-4 py-3 flex justify-between items-center relative mb-2">
+
+    <header className="px-3 md:px-4 py-6 md:py-3 mx-4 flex justify-items-start md:justify-between items-center relative mb-2 gap-2">
+
 {/* logo side */}
       <div className="hover:cursor-pointer">
-            <img src={logo} alt="logo image" className="w-[20%] h-[10%] object-contain"/>
+            <img src={logo} alt="logo image" className="w-[50%] md:w-[20%] h-[40%]  md:h-[10%] object-contain"/>
       </div>
 {/* button side */}
-        <div className="flex items-center space-x-3 relative">
-            <div className='py-1 px-4 relative'>
+        <div className="flex items-center space-x-1 md:space-x-3 relative">
+            <div className='py-1 md-px-4 relative hidden md:block'>
                 <button className="flex items-center p-2 rounded-lg hover:cursor-pointer relative bg-secondary" onClick={handleLanguage} ref={CountryRefBtn}>
                 <img className="w-4 h-4 mr-1 rounded-sm" src={englishFlag} alt="Profile" />
                 <span className='text-sm text-black'>English</span>
@@ -64,19 +65,19 @@ const Header = ({toggleSidebar}) => {
                 <div className='absolute top-full right-0 mt-3 z-50'>
                 {isLanguageChange && <LanguageSelector ref={CountryRef}/>}
                 </div>
-             
+              
                 </div>
 {/* sidebar toggle button */}
             <div>
-            <button className='hover:cursor-pointer bg-secondary p-3 rounded-lg' onClick={toggleSidebar}>
+            <button className='hover:cursor-pointer bg-secondary p-2 md:p-3 rounded-lg' onClick={toggleSidebar}>
           <FaAlignLeft className="text-primary" />
         </button>
             </div>
 {/* Profile toggle */}
              <div className='relative'>
-                <button className="flex items-center py-4 px-4 rounded-lg hover:cursor-pointer"
+                <button className="flex items-center md:py-4 px-2 md:px-4 rounded-lg hover:cursor-pointer"
                 onClick={handleProfileToggle} ref={profileBtnRef}>
-                <img className="w-8 h-8 mr-1 rounded-sm" src={profileImg} alt="Profile" />
+                <img className="w-8 h-8 md:mr-1 rounded-sm" src={profileImg} alt="Profile" />
                 <span className='text-sm text-secondry font-medium'>Hello Tahir</span>
                 </button>
                 
@@ -91,5 +92,4 @@ const Header = ({toggleSidebar}) => {
   );
 }
 
-export default Header;
 

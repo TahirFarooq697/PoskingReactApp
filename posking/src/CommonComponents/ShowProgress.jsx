@@ -1,7 +1,7 @@
 import React from "react";
 import { VscGraph } from "react-icons/vsc";
 
-export default function ShowProgress({ title, amount }) {
+export function ShowProgress({ title, amount }) {
   return (
     <div>
       <div className="flex flex-row gap-3 text-xl">

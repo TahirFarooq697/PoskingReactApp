@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ChangePassword = () => {
+export const ChangePassword = () => {
   return (
     <> 
    <form className="max-w-md mx-auto p-6 bg-white rounded shadow space-y-4">
@@ -47,4 +47,4 @@ const ChangePassword = () => {
   );
 }
 
-export default ChangePassword;
+

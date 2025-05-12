@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const TableComponent = ({ columns, data, ref}) => {
+export const TableComponent = ({ columns, data, ref}) => {
   return (
     <table className='mt-4 w-full border-t-1 border-table' ref={ref}>
       <thead className="border-b-2 border-table">
@@ -32,4 +32,4 @@ const TableComponent = ({ columns, data, ref}) => {
   );
 }
 
-export default TableComponent;
+

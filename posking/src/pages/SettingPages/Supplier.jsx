@@ -1,10 +1,9 @@
 
 import React from 'react';
-import TableComponent from '../../Components/TableComponent';
-import Button from '../../Components/Button'
+import { Button,TableComponent } from '../../CommonComponents';
 import { SupplierDetailsTable,SupplierTableColums } from '../../constants/SettingSideBarDatas/SupplierDetailsTable';
 
-const Supplier = ({path}) => {
+export const Supplier = ({path}) => {
   
   return (
     <div className='w-full'>
@@ -32,6 +31,6 @@ const Supplier = ({path}) => {
   );
 }
 
-export default Supplier;
+
 
 

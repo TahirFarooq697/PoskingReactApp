@@ -1,10 +1,8 @@
-
 import React from 'react';
-import TableComponent from '../../Components/TableComponent';
-import Button from '../../Components/Button'
+import { Button,TableComponent } from '../../CommonComponents';
 import { ProductAttributesTable,ProductAttributesTablecolums } from '../../constants/SettingSideBarDatas/ProductAttributesTable';
 
-const ProductAttributes = ({path}) => {
+export const ProductAttributes = ({path}) => {
   
   return (
     <div className='w-full'>
@@ -32,6 +30,6 @@ const ProductAttributes = ({path}) => {
   );
 }
 
-export default ProductAttributes;
+
 
 

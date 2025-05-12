@@ -1,8 +1,7 @@
 import React from 'react';
-import FilterInput from './FilterComponents/FilterInput';
-import Button from './Button';
-
-const SearchStockForm = ({
+import { FilterInput} from '../../Components';
+import { Button } from '../../CommonComponents';
+export const SearchStockForm=() => ({
   filters,
   onChange,
   onSearch,
@@ -38,4 +37,4 @@ const SearchStockForm = ({
   );
 };
 
-export default SearchStockForm;
+

@@ -1,13 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
-import TableComponent from '../../Components/TableComponent';
+
+import { NormalButton,DropdownButton,TableComponent,Button, } from '../../CommonComponents';
 import { PosDetailsTable,PosTableColumn } from '../../constants/PosDetailsTable';
-import Button from '../../Components/Button';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import { useState } from 'react';
-const PosDetails = ({path}) => {
+
+export const PosDetails = ({path}) => {
    const [filters, setFilters] = useState({
     orderId: '',
     customer: '',
@@ -129,5 +126,3 @@ const PosDetails = ({path}) => {
     </div>
   );
 }
-
-export default PosDetails;

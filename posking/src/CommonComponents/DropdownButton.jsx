@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-const DropdownButton = ({ title, options, onSelect }) => {
+export const DropdownButton = ({ title, options, onSelect }) => {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -47,4 +47,4 @@ const DropdownButton = ({ title, options, onSelect }) => {
   );
 };
 
-export default DropdownButton;
+

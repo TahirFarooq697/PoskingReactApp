@@ -1,18 +1,14 @@
-
 import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import TableComponent from '../../Components/TableComponent';
+import {FilterInput} from '../../Components';
+import { Button,TableComponent,DropdownButton,NormalButton } from '../../CommonComponents';
 import {
   PurchaseDetailsTable,
   purchaseTableColumns,
 } from '../../constants/PurchaseDetailsTable';
-import Button from '../../Components/Button';
-import NormalButton from '../../Components/NormalButton';
-import DropdownButton from '../../Components/DropdownButton';
 
-const PurchaseDetails = ({ path }) => {
+export const Purchse = ({ path }) => {
   const inputClass = 'border border-gray-300 rounded-md p-2';
   const btnClass =
     'w-20 bg-primary text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3';
@@ -189,5 +185,4 @@ const PurchaseDetails = ({ path }) => {
   );
 };
 
-export default PurchaseDetails;
 

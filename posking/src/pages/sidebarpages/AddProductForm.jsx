@@ -1,10 +1,8 @@
-import React from 'react';
-import Button from '../Components/Button';
-import { useState } from 'react';
+import React,{ useState } from 'react';
+import {FilterInput} from '../../Components';
+import { Button } from '../../CommonComponents/Button';
 import { useNavigate } from 'react-router-dom';
-import AddPurchaseForm from './sidebarpages/AddPurchaseForm';
-import FilterInput from '../Components/FilterComponents/FilterInput';
-const AddProductForm = () => {
+export const AddProductForm = () => {
   const cancelProduct=useNavigate();
   const [productData, setProductData] = useState({
     name: "",
@@ -116,4 +114,4 @@ const AddProductForm = () => {
   );
 }
 
-export default AddProductForm;
+

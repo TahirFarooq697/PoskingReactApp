@@ -1,11 +1,10 @@
 import React from 'react';
-import BtnwithIcon from './BtnwithIcon';
+import { BtnwithIcon } from '../CommonComponents/BtnwithIcon';
 import { sidebarData } from '../constants/SideBarData';
-
-const SidebarManu = () => {
+export const SidebarManu = () => {
  
   return (
-    <section className="p-4 bg-white w-64 h-full shadow-md overflow-y-auto ">
+    <section className="p-4 bg-white md:w-64 h-full shadow-md overflow-y-auto ">
     {sidebarData.map((section, index) => (
       <div key={index} className="mb-6">
         <label className="block font-sans font-semibold text-gray-400">{section.label}</label>
@@ -21,4 +20,3 @@ const SidebarManu = () => {
   );
 }
 
-export default SidebarManu;

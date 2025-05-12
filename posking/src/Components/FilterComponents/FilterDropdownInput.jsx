@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterDropdownInput = ({label,  options = []}) => {
+export const FilterDropdownInput = ({label,  options = []}) => {
   return (
     <div class="flex flex-col">
     <label class="text-sm font-medium text-secondry mb-1">{label}</label>
@@ -14,4 +14,4 @@ const FilterDropdownInput = ({label,  options = []}) => {
   );
 }
 
-export default FilterDropdownInput;
+

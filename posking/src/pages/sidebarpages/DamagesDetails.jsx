@@ -1,13 +1,9 @@
-import React from 'react';
-import Button from '../../Components/Button';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
+import React,{useState} from 'react';
+import { FilterInput } from '../../Components';
+import { Button,TableComponent,DropdownButton,NormalButton } from '../../CommonComponents';
 import * as XLSX from 'xlsx';
-import TableComponent from '../../Components/TableComponent';
 import { DamagesDetailsTable, DamagesTableColumns} from "../../Components/../constants/DamagesDetailsTable"
-import { useState } from 'react';
-const DamagesDetails = ({path}) => {
+export const DamagesDetails = ({path}) => {
    const [filters, setFilters] = useState({
       date: '',
       refrenceNo: '',
@@ -101,7 +97,7 @@ const DamagesDetails = ({path}) => {
   { label: 'XSL', value: 'xsl' },
 ]} onSelect={handleExportSelect}/>
    
-
+ 
 
 </div>
       </div>
@@ -131,4 +127,3 @@ const DamagesDetails = ({path}) => {
   );
 }
 
-export default DamagesDetails;

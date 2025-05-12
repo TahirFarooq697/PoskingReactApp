@@ -32,3 +32,10 @@ const AdministrtorTableColumns = [
   ];
 
 export { AdministrtorDetailsTable, AdministrtorTableColumns };
+
+
+export const adminFields = [
+  { label: "Email", name: "email", type: "text" },
+  { label: "Phone", name: "phone", type: "text" },
+  { label: "Status", name: "status", type: "text" }
+];

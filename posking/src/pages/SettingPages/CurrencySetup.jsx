@@ -1,10 +1,8 @@
 import React from 'react';
 import { CurrenciesDetailsTable,CurrentiesTableCoums } from '../../constants/SettingSideBarDatas/CurrenciesDetailsTable';
-import TableComponent from '../../Components/TableComponent';
-import Button from '../../Components/Button'
-import DropdownButton from '../../Components/DropdownButton';
-import NormalButton from '../../Components/NormalButton';// checking for filter
-const Currencies = ({path}) => {
+
+import { Button,TableComponent } from '../../CommonComponents';
+export const CurrencySetup = ({path}) => {
  const btnClassfilter="w-20 border-1 text-primary py-2 px-4 rounded-md  mr-3" //checking for filter
   return (
     <div className='w-full'>
@@ -29,4 +27,4 @@ const Currencies = ({path}) => {
   );
 }
 
-export default Currencies;
+

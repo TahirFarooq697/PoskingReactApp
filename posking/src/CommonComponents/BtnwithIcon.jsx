@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-const BtnwithIcon = ({title, icon,path}) => {
+export const BtnwithIcon = ({title, icon,path}) => {
   const baseClasses="p-3 rounded hover:bg-gray-100 text-secondry flex items-center border-b-1 border-table font-medium"
   const checkIsImg=typeof icon==='string';
   return (
@@ -19,4 +19,4 @@ const BtnwithIcon = ({title, icon,path}) => {
   );
 }
 
-export default BtnwithIcon;
+ 

@@ -1,15 +1,9 @@
-
-
 import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
-import NormalButton from "../../Components/NormalButton";
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
+import { SearchStockForm } from './SearchStockForm';
+import { NormalButton,DropdownButton,TableComponent } from '../../CommonComponents';
 import { StockDetailsTables, StockTableColumns } from '../../constants/StockDetailsTables';
-
-import SearchStockForm from '../../Components/SearchStockForm';
-
-const StockDetails = ({ path }) => {
+export const StockDetails = ({ path }) => {
   const inputClass = "border border-gray-300 rounded-md p-2";
   const btnClass = "w-20 bg-primary text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3";
 
@@ -106,4 +100,5 @@ const StockDetails = ({ path }) => {
   );  
 };
 
-export default StockDetails;
+
+ 

@@ -2,7 +2,7 @@ import { useEffect,useRef } from "react";
 import { createPortal } from "react-dom";
 import React  from 'react';
 
-const Modal = ({children}) => {
+export const Modal = ({children}) => {
     const dialog=useRef();
     useEffect(()=>{
         if(open){
@@ -15,4 +15,4 @@ const Modal = ({children}) => {
   );
 }
 
-export default Modal;
+

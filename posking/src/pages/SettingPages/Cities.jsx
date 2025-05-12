@@ -1,11 +1,9 @@
 import React ,{useState}from 'react';
-// import TableHead from '../../Components/TableHead';
-
-import TableComponent from '../../Components/TableComponent';
+import { Button ,TableComponent} from '../../CommonComponents';
+import {FilterInput} from '../../Components';
 import { CountriesDetailsTable,CountriesTableCoums } from '../../constants/SettingSideBarDatas/CountriesDetailsTable';
-import Button from '../../Components/Button'
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-const Cities = () => {
+
+export const Cities = () => {
   const inputClass = "border border-gray-300 rounded-md p-2";
         const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
        const [showFilterpurchse, isShowFilterpurchae]=useState(false)
@@ -47,4 +45,4 @@ const Cities = () => {
   );
 }
 
-export default Cities;
+

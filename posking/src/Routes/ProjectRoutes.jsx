@@ -1,41 +1,43 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomeSummery from '../pages/HomeSummery';
-import SignIn from '../pages/SignIn';
+import {
+  HomeSummery,
+  SignIn,
+  EditProfile,
+  ChangePassword,
+  ProductDetail,
+  DamagesDetails,
+  Purchse,
+  StockDetails,
+  AdministrtorDetails,
+  CustomersDetails,
+  EmployeeDetails,
+  SalesReport,
+  ProductReport,
+  PosDetails,
+  AddProductForm,
+  AddPurchaseForm,
+  AddAdministratorForm,
+  AddCustomerForm,
+  AddEmployeeForm,
+  Settings,
+  Company,
+  Site,
+  Mail,
+  LocationSetup,
+  CurrencySetup,
+  Country,
+  State,
+  Cities,
+  ProductCategories,
+  ProductAttributes,
+  ProductBrands,
+  Supplier,
+  Unit,
+  Taxes
+} from '../pages';
 import MainLayout from '../Layout/MainLayout';
-import EditProfile from '../pages/EditProfile';
-import ChangePassword from '../pages/ChangePassword';
-import ProductDetail from '../pages/sidebarpages/ProductDetail';
-import DamagesDetails from '../pages/sidebarpages/DamagesDetails';
-import Purchse from '../pages/sidebarpages/Purchse';
-import StockDetails from '../pages/sidebarpages/StockDetails';
-import AdministrtorDetails from '../pages/sidebarpages/AdministrtorDetails';
-import CustomersDetails from '../pages/sidebarpages/CustomersDetails';
-import EmployeeDetails from '../pages/sidebarpages/EmployeeDetails';
-import SalesReport from '../pages/sidebarpages/SalesReport';
-import ProductReport from '../pages/sidebarpages/ProductReport';
-import PosDetails from '../pages/sidebarpages/PosDetails';
-import Products from '../Components/Products';
-import Settings from '../pages/sidebarpages/Settings';
-import Company from '../pages/SettingPages/Company';
-import Site from '../pages/SettingPages/Site';
-import Mail from '../pages/SettingPages/Mail';
-import LocationSetup from '../pages/SettingPages/LocationSetup';
-import CurrencySetup from '../pages/SettingPages/CurrencySetup';
-import Country from '../pages/SettingPages/Country';
-import State from '../pages/SettingPages/State';
-import Cities from '../pages/SettingPages/Cities';
-import ProductCategories from '../pages/SettingPages/ProductCategories';
-import ProductAttributes from '../pages/SettingPages/productAttributes';
-import ProductBrands from '../pages/SettingPages/ProductBrands';
-import Supplier from '../pages/SettingPages/Supplier';
-import Unit from '../pages/SettingPages/Unit';
-import Taxes from '../pages/SettingPages/Taxes';
-import AddProductForm from '../pages/AddProductForm';
-import AddPurchaseForm from '../pages/sidebarpages/AddPurchaseForm';
-import AddAdministratorForm from '../pages/sidebarpages/AddAdministratorForm';
-import AddCustomerForm from '../pages/sidebarpages/AddCustomerForm';
-import AddEmployeeForm from '../pages/sidebarpages/AddEmployeeForm';
+import { Products } from '../Components';
 const ProjectRoutes = () => {
     const routes=createBrowserRouter([
         {

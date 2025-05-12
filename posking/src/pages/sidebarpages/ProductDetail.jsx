@@ -1,18 +1,14 @@
-
+import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import ProductFilterForm from '../../Components/FilterComponents/ProductFilterForm';
-import React, { useState } from 'react';
-import DropdownButton from '../../Components/DropdownButton';
-import NormalButton from '../../Components/NormalButton';
-import Button from '../../Components/Button';
-import TableComponent from '../../Components/TableComponent';
+import {ProductFilterForm} from '../../Components';
+import { Button ,DropdownButton,TableComponent,NormalButton} from '../../CommonComponents';
 import {
   productTableColumns,
   ProductsDetailsTable,
 } from '../../../src/constants/ProductsDetailsTable';
 
-const ProductDetail = ({ path }) => {
+export const ProductDetail = ({ path }) => {
   const [filters, setFilters] = useState({
     name: '',
     category: '',
@@ -109,7 +105,7 @@ const ProductDetail = ({ path }) => {
               options={[
                 { label: '5', value: 5 },
                 { label: '10', value: 10 },
-                { label: '15', value: 15 },
+                { label: '15', value: 15 }, 
               ]}
               onSelect={handleRowsChange}
             />
@@ -159,4 +155,3 @@ const ProductDetail = ({ path }) => {
   );
 };
 
-export default ProductDetail;

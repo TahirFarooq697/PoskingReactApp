@@ -1,9 +1,7 @@
 import React from 'react';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import Button from '../../Components/Button';
-import FilterDropdownInput from '../../Components/FilterComponents/FilterDropdownInput';
-import RadioButton from '../../Components/FilterComponents/RadioButton';
-const Site = ({path}) => {
+import {FilterInput,FilterDropdownInput,RadioButton} from '../../Components';
+import { Button } from '../../CommonComponents';
+export const Site = ({path}) => {
     const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
   return (
     // ......main div....
@@ -39,5 +37,5 @@ const Site = ({path}) => {
   );
 }
 
-export default Site;
+
 

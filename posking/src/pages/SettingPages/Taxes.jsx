@@ -1,10 +1,9 @@
 
 import React from 'react';
-import TableComponent from '../../Components/TableComponent';
-import Button from '../../Components/Button'
+import { Button,TableComponent } from '../../CommonComponents';
 import { UnitDetailTable,UnitTableCoumns } from '../../constants/SettingSideBarDatas/UnitDetailTable';
 
-const Taxes = ({path}) => {
+export const Taxes = ({path}) => {
   
   return (
     <div className='w-full'>
@@ -32,6 +31,6 @@ const Taxes = ({path}) => {
   );
 }
 
-export default Taxes;
+
 
 

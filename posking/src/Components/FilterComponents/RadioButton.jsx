@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RadioButton = ({label,option1,option2}) => {
+export const RadioButton = ({label,option1,option2}) => {
   return (
     <div>
     <label className="font-semibold block mb-2 text-secondry">{label}</label>
@@ -18,4 +18,4 @@ const RadioButton = ({label,option1,option2}) => {
   );
 }
 
-export default RadioButton;
+

@@ -1,14 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
+import {FilterInput} from "../../Components"
+import { NormalButton,DropdownButton,TableComponent,Button, } from '../../CommonComponents';
 import { EmployeeDetailsTable,EmployeeTableColumns } from '../../constants/EmployeeDetailsTable';
-import Button from '../../Components/Button';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import { useState } from 'react';
-const EmployeeDetails = ({path}) => {
+
+export const EmployeeDetails = ({path}) => {
    const inputClass = "border border-gray-300 rounded-md p-2";
           const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
           const [filters, setFilters] = useState({ name: '', email: '' });
@@ -108,5 +105,5 @@ const EmployeeDetails = ({path}) => {
   );
 }
 
-export default EmployeeDetails;
+
  

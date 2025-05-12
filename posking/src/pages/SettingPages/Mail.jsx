@@ -1,8 +1,7 @@
 import React from 'react';
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import Button from '../../Components/Button';
-import RadioButton from '../../Components/FilterComponents/RadioButton';
-const Mail = ({path}) => {
+import { Button } from '../../CommonComponents';
+import {RadioButton,FilterInput} from '../../Components';
+export const Mail = ({path}) => {
     const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
   return (
     // ......main div....
@@ -28,5 +27,4 @@ const Mail = ({path}) => {
   );
 }
 
-export default Mail;
 

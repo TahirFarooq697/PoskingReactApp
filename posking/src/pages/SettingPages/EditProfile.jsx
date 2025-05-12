@@ -1,8 +1,6 @@
-
-
 import React from 'react';
 
-const EditProfile = () => {
+export const EditProfile = () => {
   return (
     <>
     
@@ -52,4 +50,4 @@ const EditProfile = () => {
   
 }
 
-export default EditProfile;
+

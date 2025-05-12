@@ -1,5 +1,5 @@
 import React from "react"
-export default function InfoOverview({title,amount, className}){
+export const InfoOverview=({title,amount, className})=>{
     return(
 
  

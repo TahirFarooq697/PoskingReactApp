@@ -1,8 +1,8 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Button from '../../Components/Button';
+import {Button} from '../../CommonComponents/Button';
 
-const LocationSetup = () => {
+export const LocationSetup = () => {
 
   return (
     // ......main div....
@@ -20,5 +20,5 @@ const LocationSetup = () => {
   );
 }
 
-export default LocationSetup;
+
 

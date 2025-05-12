@@ -1,12 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SettingSideBar from '../SettingPages/SettingSideBar';
-// import BtnwithIcon from '../../Components/BtnwithIcon';
 import { Outlet } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
-const Settings = () => {
-  // const styleThis="border-b-1 border-table font-medium"
-  // const navigate=useNavigate();
+export const Settings = () => {
   return (
   //main div
     <div>
@@ -29,4 +24,4 @@ const Settings = () => {
   );
 }
 
-export default Settings;
+

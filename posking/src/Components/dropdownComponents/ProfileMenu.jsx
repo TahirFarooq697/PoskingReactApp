@@ -2,9 +2,9 @@ import React from 'react';
 import profileImg from "../../assets/Images/profile.jpg"
 import { FaUserEdit,FaKey  } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import BtnwithIcon from '../BtnwithIcon';
+import { BtnwithIcon } from '../../CommonComponents/BtnwithIcon';
 import { useNavigate } from 'react-router-dom';
-const ProfileMenu = ({ref}) => {
+export const ProfileMenu = ({ref}) => {
   const navigate=useNavigate();
   const handleLogout = () => {
     navigate('/');
@@ -41,4 +41,3 @@ const ProfileMenu = ({ref}) => {
   );
 }
 
-export default ProfileMenu;

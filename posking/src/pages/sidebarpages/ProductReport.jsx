@@ -1,15 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
-import InfoOverview from '../../Components/InfoOverview';
-import Button from '../../Components/Button'
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import { useState } from 'react';
+import { NormalButton,DropdownButton,TableComponent,Button,InfoOverview } from '../../CommonComponents';
+import {FilterInput} from "../../Components"
 import { ProductsReportDetailTable,ProductsReportTableColumns } from '../../constants/ProductsReportDetailTable';
-const ProductReport = ({path}) => {
+export const ProductReport = ({path}) => {
 
         const inputClass = "border border-gray-300 rounded-md p-2";
           const btnClass="w-20 bg-primary  text-white py-2 px-4 rounded-md hover:[cursor:pointer] mr-3"
@@ -122,4 +117,4 @@ const ProductReport = ({path}) => {
   
 }
 
-export default ProductReport;
+

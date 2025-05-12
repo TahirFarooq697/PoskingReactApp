@@ -1,10 +1,8 @@
-
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import React from 'react';
-import Button from '../../Components/Button';
-import { useState } from 'react';
+import {FilterInput} from '../../Components'
+import { Button } from '../../CommonComponents';
+import React,{ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const AddCustomerForm = () => {
+export const AddCustomerForm = () => {
   const cancelProduct=useNavigate();
   const [custometratorData, setCustomerData] = useState({
     name: "",
@@ -77,7 +75,7 @@ const AddCustomerForm = () => {
            />
          </div>
 
-         <div>
+         <div> 
            
            <FilterInput
            label="Phone" 
@@ -116,4 +114,4 @@ const AddCustomerForm = () => {
   );
 }
 
-export default AddCustomerForm;
+

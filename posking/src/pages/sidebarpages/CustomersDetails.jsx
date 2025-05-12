@@ -1,13 +1,9 @@
 import React ,{useState}from 'react';
 import * as XLSX from 'xlsx';
-import NormalButton from "../../Components/NormalButton"
-import DropdownButton from '../../Components/DropdownButton';
-import TableComponent from '../../Components/TableComponent';
+import { NormalButton,DropdownButton,TableComponent,Button, } from '../../CommonComponents';
+import {FilterInput} from "../../Components"
 import { CustomersDetailsTalbe,CustomersTalbeColums } from '../../constants/CustomersDetailsTalbe';
-import Button from '../../Components/Button'
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-
-const CustomersDetails = ({path}) => {
+export const CustomersDetails = ({path}) => {
   const [filters, setFilters] = useState({ name: '', email: '' });
   const [filteredData, setFilteredData] = useState(CustomersDetailsTalbe);
   const inputClass = "border border-gray-300 rounded-md p-2";
@@ -109,4 +105,4 @@ const CustomersDetails = ({path}) => {
   );
 }
 
-export default CustomersDetails;
+

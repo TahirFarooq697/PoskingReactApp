@@ -1,9 +1,9 @@
 
 import React from 'react';
-import FilterInput from './FilterInput';
-import Button from '../Button';
+import {FilterInput} from './FilterInput';
+import {Button} from '../../CommonComponents/Button';
 
-const ProductFilterForm = ({
+export const ProductFilterForm = ({
   filters,
   onChange,
   onSearch,
@@ -64,4 +64,4 @@ const ProductFilterForm = ({
   );
 };
 
-export default ProductFilterForm;
+

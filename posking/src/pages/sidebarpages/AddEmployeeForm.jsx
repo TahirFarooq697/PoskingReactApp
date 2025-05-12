@@ -1,10 +1,8 @@
-
-import FilterInput from '../../Components/FilterComponents/FilterInput';
-import React from 'react';
-import Button from '../../Components/Button';
-import { useState } from 'react';
+import { Button } from '../../CommonComponents';
+import {FilterInput} from '../../Components';
+import React,{ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const AddEmployeeForm = () => {
+export const AddEmployeeForm = () => {
   const cancelProduct=useNavigate();
   const [employeeData, setEmployeeData] = useState({
     name: "",
@@ -116,4 +114,4 @@ const AddEmployeeForm = () => {
   );
 }
 
-export default AddEmployeeForm;
+

@@ -1,10 +1,10 @@
 import React from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import ShowProgress from "./ShowProgress";
+import {ShowProgress} from "../../CommonComponents/ShowProgress"
 
-export default function StateSummery() {
+export const StateSummery=()=>{
   return (
-    <section className="p-6 mb-4">
+    <section className="p-4 md:p-6 mb-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-white p-10 rounded-lg shadow-md">
          

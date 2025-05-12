@@ -1,5 +1,5 @@
 import React from 'react';
-import BtnwithIcon from '../../Components/BtnwithIcon';
+import { BtnwithIcon } from '../../CommonComponents';
 
 const SettingSideBar = () => {
  
